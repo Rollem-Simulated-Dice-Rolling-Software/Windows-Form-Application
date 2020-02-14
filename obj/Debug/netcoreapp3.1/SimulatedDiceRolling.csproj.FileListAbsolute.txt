@@ -1,0 +1,16 @@
+C:\Users\trent\source\repos\SimulatedDiceRolling\bin\Debug\netcoreapp3.1\SimulatedDiceRolling.deps.json
+C:\Users\trent\source\repos\SimulatedDiceRolling\bin\Debug\netcoreapp3.1\SimulatedDiceRolling.dll
+C:\Users\trent\source\repos\SimulatedDiceRolling\bin\Debug\netcoreapp3.1\SimulatedDiceRolling.pdb
+C:\Users\trent\source\repos\SimulatedDiceRolling\obj\Debug\netcoreapp3.1\SimulatedDiceRolling.csprojAssemblyReference.cache
+C:\Users\trent\source\repos\SimulatedDiceRolling\obj\Debug\netcoreapp3.1\SimulatedDiceRolling.AssemblyInfoInputs.cache
+C:\Users\trent\source\repos\SimulatedDiceRolling\obj\Debug\netcoreapp3.1\SimulatedDiceRolling.AssemblyInfo.cs
+C:\Users\trent\source\repos\SimulatedDiceRolling\obj\Debug\netcoreapp3.1\SimulatedDiceRolling.dll
+C:\Users\trent\source\repos\SimulatedDiceRolling\obj\Debug\netcoreapp3.1\SimulatedDiceRolling.pdb
+C:\Users\trent\Source\Repos\Rollem-Simulated-Dice-Rolling-Software\Windows-Form-Application\bin\Debug\netcoreapp3.1\SimulatedDiceRolling.deps.json
+C:\Users\trent\Source\Repos\Rollem-Simulated-Dice-Rolling-Software\Windows-Form-Application\bin\Debug\netcoreapp3.1\SimulatedDiceRolling.dll
+C:\Users\trent\Source\Repos\Rollem-Simulated-Dice-Rolling-Software\Windows-Form-Application\bin\Debug\netcoreapp3.1\SimulatedDiceRolling.pdb
+C:\Users\trent\Source\Repos\Rollem-Simulated-Dice-Rolling-Software\Windows-Form-Application\obj\Debug\netcoreapp3.1\SimulatedDiceRolling.csprojAssemblyReference.cache
+C:\Users\trent\Source\Repos\Rollem-Simulated-Dice-Rolling-Software\Windows-Form-Application\obj\Debug\netcoreapp3.1\SimulatedDiceRolling.AssemblyInfoInputs.cache
+C:\Users\trent\Source\Repos\Rollem-Simulated-Dice-Rolling-Software\Windows-Form-Application\obj\Debug\netcoreapp3.1\SimulatedDiceRolling.AssemblyInfo.cs
+C:\Users\trent\Source\Repos\Rollem-Simulated-Dice-Rolling-Software\Windows-Form-Application\obj\Debug\netcoreapp3.1\SimulatedDiceRolling.dll
+C:\Users\trent\Source\Repos\Rollem-Simulated-Dice-Rolling-Software\Windows-Form-Application\obj\Debug\netcoreapp3.1\SimulatedDiceRolling.pdb
