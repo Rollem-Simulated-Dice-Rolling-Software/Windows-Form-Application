@@ -1,1 +1,1 @@
-SlimDX
+SlimDX - https://github.com/SlimDX/slimdx
