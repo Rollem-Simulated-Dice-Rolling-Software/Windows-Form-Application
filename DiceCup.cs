@@ -19,7 +19,7 @@ namespace SimulatedDiceRolling
         /// Creates a new Random Number generator with given seed
         /// </summary>
         /// <param name="randomNumberSeed"></param>
-        public void Shake(int randomNumberSeed)
+        public void GenerateKnownRoll(int randomNumberSeed)
         {
             randomNumberGenerator = new Random(randomNumberSeed);
         }
