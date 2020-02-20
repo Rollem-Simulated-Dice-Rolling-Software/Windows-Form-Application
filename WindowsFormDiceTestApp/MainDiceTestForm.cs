@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormDiceTestApp
 {
-    public partial class DiceTestForm : Form
+    public partial class MainDiceTestForm : Form
     {
-        public DiceTestForm()
+        public MainDiceTestForm()
         {
             InitializeComponent();
         }

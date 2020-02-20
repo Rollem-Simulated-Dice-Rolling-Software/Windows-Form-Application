@@ -16,7 +16,7 @@ namespace WindowsFormDiceTestApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DiceTestForm());
+            Application.Run(new MainDiceTestForm());
         }
     }
 }
