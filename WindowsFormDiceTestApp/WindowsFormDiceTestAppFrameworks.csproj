@@ -54,17 +54,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DiceTestForm.cs">
+    <Compile Include="MainDiceTestForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DiceTestForm.Designer.cs">
-      <DependentUpon>DiceTestForm.cs</DependentUpon>
+    <Compile Include="MainDiceTestForm.Designer.cs">
+      <DependentUpon>MainDiceTestForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="DiceTestForm.resx">
-      <DependentUpon>DiceTestForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
