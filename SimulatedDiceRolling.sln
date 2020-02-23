@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimulatedDiceRolling", "Sim
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormDiceTestApp", "WindowsFormDiceTestApp\WindowsFormDiceTestApp.csproj", "{1F4F4D0B-AAD1-4E13-9218-5A9095A9ABAF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenGL", "OpenGL\OpenGL.csproj", "{785ADDB5-D657-4044-9053-1BBB35EC656F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{1F4F4D0B-AAD1-4E13-9218-5A9095A9ABAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F4F4D0B-AAD1-4E13-9218-5A9095A9ABAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F4F4D0B-AAD1-4E13-9218-5A9095A9ABAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{785ADDB5-D657-4044-9053-1BBB35EC656F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{785ADDB5-D657-4044-9053-1BBB35EC656F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{785ADDB5-D657-4044-9053-1BBB35EC656F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{785ADDB5-D657-4044-9053-1BBB35EC656F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
