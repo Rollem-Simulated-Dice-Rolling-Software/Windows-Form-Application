@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiceTestApp", "DiceTestApp\DiceTestApp.csproj", "{12B64366-E3EB-4024-8ED5-F070FC452A6A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimulatedDiceRolling", "SimulatedDiceRolling\SimulatedDiceRolling.csproj", "{F32D0970-D3F3-4AE9-833E-166282DABE4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimulatedDiceRollingCore", "SimulatedDiceRolling\SimulatedDiceRollingCore.csproj", "{F32D0970-D3F3-4AE9-833E-166282DABE4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormDiceTestApp", "WindowsFormDiceTestApp\WindowsFormDiceTestApp.csproj", "{1F4F4D0B-AAD1-4E13-9218-5A9095A9ABAF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormDiceTestAppFrameworks", "WindowsFormDiceTestApp\WindowsFormDiceTestAppFrameworks.csproj", "{1F4F4D0B-AAD1-4E13-9218-5A9095A9ABAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenGL", "OpenGL\OpenGL.csproj", "{785ADDB5-D657-4044-9053-1BBB35EC656F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsDiceTestAppCore", "TestWindowsFormsCoreApp\WindowsFormsDiceTestAppCore.csproj", "{F8323562-B517-4401-9D9D-D0BCF76E4A63}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{1F4F4D0B-AAD1-4E13-9218-5A9095A9ABAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F4F4D0B-AAD1-4E13-9218-5A9095A9ABAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F4F4D0B-AAD1-4E13-9218-5A9095A9ABAF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{785ADDB5-D657-4044-9053-1BBB35EC656F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{785ADDB5-D657-4044-9053-1BBB35EC656F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{785ADDB5-D657-4044-9053-1BBB35EC656F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{785ADDB5-D657-4044-9053-1BBB35EC656F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8323562-B517-4401-9D9D-D0BCF76E4A63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8323562-B517-4401-9D9D-D0BCF76E4A63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8323562-B517-4401-9D9D-D0BCF76E4A63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8323562-B517-4401-9D9D-D0BCF76E4A63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
