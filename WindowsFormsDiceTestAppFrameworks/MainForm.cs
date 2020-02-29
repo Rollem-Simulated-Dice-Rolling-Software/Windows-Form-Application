@@ -21,5 +21,11 @@ namespace WindowsFormsDiceTestAppFrameworks
         {
             Close();
         }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AboutForm aboutForm = new AboutForm();
+            aboutForm.ShowDialog();
+        }
     }
 }
