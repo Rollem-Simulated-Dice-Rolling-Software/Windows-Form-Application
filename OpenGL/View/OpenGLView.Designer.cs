@@ -1,6 +1,6 @@
-﻿namespace OpenGL
+﻿namespace OpenGL.View
 {
-    partial class RollingDice
+    partial class OpenGLView
     {
         /// <summary> 
         /// Required designer variable.
@@ -38,8 +38,9 @@
             this.glControlRollingDice.BackColor = System.Drawing.Color.Black;
             this.glControlRollingDice.Dock = System.Windows.Forms.DockStyle.Fill;
             this.glControlRollingDice.Location = new System.Drawing.Point(0, 0);
+            this.glControlRollingDice.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.glControlRollingDice.Name = "glControlRollingDice";
-            this.glControlRollingDice.Size = new System.Drawing.Size(150, 150);
+            this.glControlRollingDice.Size = new System.Drawing.Size(300, 288);
             this.glControlRollingDice.TabIndex = 0;
             this.glControlRollingDice.VSync = false;
             // 
@@ -49,12 +50,14 @@
             this.imageListDice.ImageSize = new System.Drawing.Size(16, 16);
             this.imageListDice.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // RollingDice
+            // OpenGLView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.glControlRollingDice);
-            this.Name = "RollingDice";
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Name = "OpenGLView";
+            this.Size = new System.Drawing.Size(300, 288);
             this.ResumeLayout(false);
 
         }

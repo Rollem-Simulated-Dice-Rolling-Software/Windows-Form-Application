@@ -8,13 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace OpenGL
+namespace OpenGL.View
 {
-    public partial class RollingDice : UserControl
+    public partial class OpenGLView : UserControl
     {
-        public RollingDice()
+        public OpenGLView()
         {
             InitializeComponent();
+        }
+
+        public OpenTK.GLControl Control
+        {
+            get
+            {
+                return glControlRollingDice;
+            }
         }
     }
 }

@@ -46,25 +46,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AboutForm.cs">
+    <Compile Include="Interface\IMainView.cs" />
+    <Compile Include="Model\DiceCup.cs" />
+    <Compile Include="Model\DiceEventArgs.cs" />
+    <Compile Include="Model\Die.cs" />
+    <Compile Include="Presenter\MainPresenter.cs" />
+    <Compile Include="View\AboutForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AboutForm.Designer.cs">
+    <Compile Include="View\AboutForm.Designer.cs">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForm.cs">
+    <Compile Include="View\DiceCupControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\DiceCupControl.Designer.cs">
+      <DependentUpon>DiceCupControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MainView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <Compile Include="View\MainView.Designer.cs">
+      <DependentUpon>MainView.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AboutForm.resx">
+    <EmbeddedResource Include="View\AboutForm.resx">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <EmbeddedResource Include="View\DiceCupControl.resx">
+      <DependentUpon>DiceCupControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MainView.resx">
+      <DependentUpon>MainView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -99,5 +113,6 @@
       <Name>OpenGL</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsDiceTestAppFrameworks
+﻿namespace WindowsFormsDiceTestAppFrameworks.View
 {
     partial class AboutForm
     {

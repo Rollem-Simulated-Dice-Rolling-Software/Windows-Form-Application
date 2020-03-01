@@ -1,6 +1,6 @@
-﻿namespace WindowsFormsDiceTestAppFrameworks
+﻿namespace WindowsFormsDiceTestAppFrameworks.View
 {
-    partial class MainForm
+    partial class MainFormView
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainFormView));
             this.menuStripMain = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparatorFile = new System.Windows.Forms.ToolStripSeparator();
@@ -40,11 +40,17 @@
             this.toolStripMain = new System.Windows.Forms.ToolStrip();
             this.toolStripButtonRollem = new System.Windows.Forms.ToolStripButton();
             this.statusStripMain = new System.Windows.Forms.StatusStrip();
-            this.rollingDice = new OpenGL.RollingDice();
+            this.rollingDice = new OpenGL.View.OpenGLView();
             this.panelDiceRoller = new System.Windows.Forms.Panel();
+            this.splitContainerDiceCupAndAnnimation = new System.Windows.Forms.SplitContainer();
+            this.diceCupControl1 = new WindowsFormsDiceTestAppFrameworks.View.DiceCupControl();
             this.menuStripMain.SuspendLayout();
             this.toolStripMain.SuspendLayout();
             this.panelDiceRoller.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerDiceCupAndAnnimation)).BeginInit();
+            this.splitContainerDiceCupAndAnnimation.Panel1.SuspendLayout();
+            this.splitContainerDiceCupAndAnnimation.Panel2.SuspendLayout();
+            this.splitContainerDiceCupAndAnnimation.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStripMain
@@ -58,7 +64,7 @@
             this.helpToolStripMenuItem});
             this.menuStripMain.Location = new System.Drawing.Point(0, 0);
             this.menuStripMain.Name = "menuStripMain";
-            this.menuStripMain.Size = new System.Drawing.Size(1122, 42);
+            this.menuStripMain.Size = new System.Drawing.Size(1122, 40);
             this.menuStripMain.TabIndex = 0;
             this.menuStripMain.Text = "menuStrip1";
             // 
@@ -68,7 +74,7 @@
             this.toolStripSeparatorFile,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(72, 38);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(72, 36);
             this.fileToolStripMenuItem.Text = "&File";
             // 
             // toolStripSeparatorFile
@@ -86,13 +92,13 @@
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(75, 38);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(75, 36);
             this.editToolStripMenuItem.Text = "&Edit";
             // 
             // viewToolStripMenuItem
             // 
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            this.viewToolStripMenuItem.Size = new System.Drawing.Size(86, 38);
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(86, 36);
             this.viewToolStripMenuItem.Text = "&View";
             // 
             // helpToolStripMenuItem
@@ -100,13 +106,13 @@
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(85, 38);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(85, 36);
             this.helpToolStripMenuItem.Text = "&Help";
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(229, 44);
             this.aboutToolStripMenuItem.Text = "&About...";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -115,7 +121,7 @@
             this.toolStripMain.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.toolStripMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButtonRollem});
-            this.toolStripMain.Location = new System.Drawing.Point(0, 42);
+            this.toolStripMain.Location = new System.Drawing.Point(0, 40);
             this.toolStripMain.Name = "toolStripMain";
             this.toolStripMain.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
             this.toolStripMain.Size = new System.Drawing.Size(1122, 42);
@@ -130,6 +136,7 @@
             this.toolStripButtonRollem.Name = "toolStripButtonRollem";
             this.toolStripButtonRollem.Size = new System.Drawing.Size(46, 36);
             this.toolStripButtonRollem.Text = "Rollem\'";
+            this.toolStripButtonRollem.Click += new System.EventHandler(this.toolStripButtonRollem_Click);
             // 
             // statusStripMain
             // 
@@ -147,20 +154,47 @@
             this.rollingDice.Location = new System.Drawing.Point(0, 0);
             this.rollingDice.Margin = new System.Windows.Forms.Padding(12);
             this.rollingDice.Name = "rollingDice";
-            this.rollingDice.Size = new System.Drawing.Size(1122, 494);
+            this.rollingDice.Size = new System.Drawing.Size(736, 492);
             this.rollingDice.TabIndex = 0;
             // 
             // panelDiceRoller
             // 
-            this.panelDiceRoller.Controls.Add(this.rollingDice);
+            this.panelDiceRoller.Controls.Add(this.splitContainerDiceCupAndAnnimation);
             this.panelDiceRoller.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDiceRoller.Location = new System.Drawing.Point(0, 84);
+            this.panelDiceRoller.Location = new System.Drawing.Point(0, 82);
             this.panelDiceRoller.Margin = new System.Windows.Forms.Padding(6);
             this.panelDiceRoller.Name = "panelDiceRoller";
-            this.panelDiceRoller.Size = new System.Drawing.Size(1122, 494);
+            this.panelDiceRoller.Size = new System.Drawing.Size(1122, 496);
             this.panelDiceRoller.TabIndex = 3;
             // 
-            // MainForm
+            // splitContainerDiceCupAndAnnimation
+            // 
+            this.splitContainerDiceCupAndAnnimation.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.splitContainerDiceCupAndAnnimation.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainerDiceCupAndAnnimation.Location = new System.Drawing.Point(0, 0);
+            this.splitContainerDiceCupAndAnnimation.Name = "splitContainerDiceCupAndAnnimation";
+            // 
+            // splitContainerDiceCupAndAnnimation.Panel1
+            // 
+            this.splitContainerDiceCupAndAnnimation.Panel1.Controls.Add(this.diceCupControl1);
+            // 
+            // splitContainerDiceCupAndAnnimation.Panel2
+            // 
+            this.splitContainerDiceCupAndAnnimation.Panel2.Controls.Add(this.rollingDice);
+            this.splitContainerDiceCupAndAnnimation.Size = new System.Drawing.Size(1122, 496);
+            this.splitContainerDiceCupAndAnnimation.SplitterDistance = 374;
+            this.splitContainerDiceCupAndAnnimation.SplitterWidth = 8;
+            this.splitContainerDiceCupAndAnnimation.TabIndex = 1;
+            // 
+            // diceCupControl1
+            // 
+            this.diceCupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.diceCupControl1.Location = new System.Drawing.Point(0, 0);
+            this.diceCupControl1.Name = "diceCupControl1";
+            this.diceCupControl1.Size = new System.Drawing.Size(370, 492);
+            this.diceCupControl1.TabIndex = 4;
+            // 
+            // MainFormView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -172,13 +206,18 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStripMain;
             this.Margin = new System.Windows.Forms.Padding(6);
-            this.Name = "MainForm";
+            this.Name = "MainFormView";
             this.Text = "Rollem\'";
+            this.Load += new System.EventHandler(this.MainFormView_Load);
             this.menuStripMain.ResumeLayout(false);
             this.menuStripMain.PerformLayout();
             this.toolStripMain.ResumeLayout(false);
             this.toolStripMain.PerformLayout();
             this.panelDiceRoller.ResumeLayout(false);
+            this.splitContainerDiceCupAndAnnimation.Panel1.ResumeLayout(false);
+            this.splitContainerDiceCupAndAnnimation.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerDiceCupAndAnnimation)).EndInit();
+            this.splitContainerDiceCupAndAnnimation.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -197,8 +236,10 @@
         private System.Windows.Forms.ToolStrip toolStripMain;
         private System.Windows.Forms.ToolStripButton toolStripButtonRollem;
         private System.Windows.Forms.StatusStrip statusStripMain;
-        private OpenGL.RollingDice rollingDice;
+        private OpenGL.View.OpenGLView rollingDice;
         private System.Windows.Forms.Panel panelDiceRoller;
+        private System.Windows.Forms.SplitContainer splitContainerDiceCupAndAnnimation;
+        private DiceCupControl diceCupControl1;
     }
 }
 
